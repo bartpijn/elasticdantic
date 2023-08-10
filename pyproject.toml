@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "elasticdantic"
+version = "0.0.1"
+description = "Elasticsearch DSL wrapper based on pydantic models"
+authors = ["Bart Pijnenburg <bart@datenna.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+elasticsearch = "^8.9.0"
+pydantic = "^2"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+isort = "^5.12.0"
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
